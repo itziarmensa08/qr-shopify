@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "app"
+client_id = "4c45bf22e05267a5bde83f57c1cd267d"
+application_url = "https://symposium-finding-anchor-veterans.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://symposium-finding-anchor-veterans.trycloudflare.com/auth/callback",
+  "https://symposium-finding-anchor-veterans.trycloudflare.com/auth/shopify/callback",
+  "https://symposium-finding-anchor-veterans.trycloudflare.com/api/auth/callback",
+  "https://symposium-finding-anchor-veterans.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-2b06e6fe.myshopify.com"
